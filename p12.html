@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //setting a prototype using the constructor
+        let obj={
+            name:"hari",
+            channel:"code with haari",
+
+        }
+
+        function Obj(givenName)
+        {
+            this.name=givenName
+        }
+        Obj.prototype.getName=function()
+        {
+            return this.name;
+
+        }
+        let obj2=new Obj ('Tohan')
+        console.log(obj2)
+
+
+        //using the constructor by using the object.assign
+
+
+
+        // const personPrototypes={
+        //     greet()
+        //     {
+        //         console.log(`hello my name is ${this.name}`)
+        //     }
+        // }
+        // function Person(name)
+        // {
+        //     this.name=name;
+        // }
+        // Object.assign(Person.prototype,personPrototypes);
+        // let obj=new personPrototypes
+        // console.log(obj)
+
+          //setting a prototype (object.create)
+        // const personPrototype={
+        //     greet()
+        //     {
+        //         console.log('hello')
+        //     }
+        // }
+        // const carl=Object.create(personPrototype)
+        //       carl.greet() 
+        //       console.log(carl)   
+              
+        //       const fun=new personPrototype()
+        //       console.log(fun)       
+        
+       
+    </script>
+    
+</body>
+</html>
