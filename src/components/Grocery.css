@@ -1,0 +1,13 @@
+li{
+    width: 70px;
+    height: 50px;
+    color: black;
+    background-color: antiquewhite;
+
+}
+div{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
