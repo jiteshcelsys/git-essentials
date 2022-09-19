@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    //inheritance in proto
+    <script>
+        //inheritance by traditional method
+        const proto = {
+
+            slogan: function () {
+
+                return 'this company  is the best'
+
+            },
+            changeName: function (newName) {
+                this.name = newName;
+            }
+
+        }
+
+        const harry = Object.create(proto)
+        harry.name = "Harry";
+        harry.role = "Programmer";
+        harry.changeName("Jitesh")
+        console.log(harry);
+        function emp(name, salary, experience) {
+            this.name = name;
+            this.salary = salary;
+            this.experience = experience;
+        }
+
+
+        //slogan acessiing--------inheritance the prototype object from proto
+        emp.prototype.slogan = function () {
+            return `hello everyone this is ,${this.name}`
+        }
+        let harryObj = new emp('jitesh', 341590, 8)
+        console.log(harryObj);
+
+
+
+         //inheritance by es6 classes
+         
+
+
+    </script>
+
+</body>
+
+</html>
